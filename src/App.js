@@ -1,25 +1,29 @@
-import { useEffect, useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
-import VehicleCard from './components/Header/VehicleCard/VehicleCard';
-import vehicleData from './data/data.json';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  // Link
+} from "react-router-dom";
+import Login from './components/Login/Login';
+import Home from './components/Home/Home';
 
 function App() {
-  const first4 = vehicleData.slice(0, 4);
-  const [vehicles, setVehicles] = useState(first4);
-    useEffect(() =>{
-        setVehicles(first4);
-        console.log(first4);
-    }, [first4])
     
-  return (
-    <div>
+  return (    
+    <div>      
       <Header></Header>
-      {
-        vehicles.map(vehicles =><VehicleCard vehicle ={vehicles}></VehicleCard>)
-      }
-
+      <Router>
+        <Switch>
+          <Route path="/login">
+          <Login></Login>       
+          </Route>
+        </Switch>
+        <Route exact path="/">
+            <Home></Home>
+          </Route>
+      </Router>      
     </div>
   );
 }
