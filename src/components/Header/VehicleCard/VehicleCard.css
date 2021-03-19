@@ -1,0 +1,17 @@
+.card-style {
+    box-shadow: 3px 5px 10px #56a0c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.card-style .card {
+    float: left; 
+    
+}
+
+.card-style img {
+    border-radius: 4px 4px 0 0;
+    width: 220px;
+}

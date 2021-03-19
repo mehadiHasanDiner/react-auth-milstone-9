@@ -2,18 +2,25 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import './Header.css'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+import Login from '../Login/Login';
 
 const Header = () => {
     return (
         <div>
             <Container>
-            <Navbar collapseOnSelect expand="lg" bg ="light" variant="light">
-                <Navbar.Brand href="#home">Jattri-Pathao</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto">
-                    </Nav>
-                    <Nav>
+                <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+                    <Navbar.Brand href="#home">Jattri-Pathao</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="mr-auto">
+                        </Nav>
+                        <Nav>
                         <Nav.Link href="#">Home</Nav.Link>
                         <Nav.Link href="#1">Destination</Nav.Link>
                         <Nav.Link href="#2">Blog</Nav.Link>
