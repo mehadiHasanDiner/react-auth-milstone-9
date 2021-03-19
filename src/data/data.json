@@ -33,8 +33,7 @@
     "person": 1,
     "price": 35,
     "image": "https://i.ibb.co/RCvqFdB/Frame.png"
-  },
-     {
+  }, {
     "id": 6,
     "vehicle_id": 2,
     "vehicle_name": "CAR",
@@ -43,19 +42,19 @@
     "image": "https://i.ibb.co/RzwSCWq/Frame-2.png"
   }, {
     "id": 7,
-    "vehicle_id": 2,
-    "vehicle_name": "CAR",
-    "person": 4,
-    "price": 100,
-    "image": "https://i.ibb.co/RzwSCWq/Frame-2.png"
+    "vehicle_id": 3,
+    "vehicle_name": "BUS",
+    "person": 5,
+    "price": 69,
+    "image": "https://i.ibb.co/zsyFTwf/Frame-1.png"
   }, {
     "id": 8,
-    "vehicle_id": 2,
-    "vehicle_name": "CAR",
-    "person": 4,
+    "vehicle_id": 4,
+    "vehicle_name": "TRAIN",
+    "person": 6,
     "price": 100,
-    "image": "https://i.ibb.co/RzwSCWq/Frame-2.png"
-  },  {
+    "image": "https://i.ibb.co/st5tVRJ/Group.png"
+  }, {
     "id": 9,
     "vehicle_id": 1,
     "vehicle_name": "BIKE",
@@ -64,11 +63,11 @@
     "image": "https://i.ibb.co/RCvqFdB/Frame.png"
   }, {
     "id": 10,
-    "vehicle_id": 3,
-    "vehicle_name": "BUS",
-    "person": 5,
-    "price": 69,
-    "image": "https://i.ibb.co/zsyFTwf/Frame-1.png"
+    "vehicle_id": 2,
+    "vehicle_name": "CAR",
+    "person": 4,
+    "price": 100,
+    "image": "https://i.ibb.co/RzwSCWq/Frame-2.png"
   }, {
     "id": 11,
     "vehicle_id": 3,
@@ -78,37 +77,37 @@
     "image": "https://i.ibb.co/zsyFTwf/Frame-1.png"
   }, {
     "id": 12,
+    "vehicle_id": 4,
+    "vehicle_name": "TRAIN",
+    "person": 6,
+    "price": 100,
+    "image": "https://i.ibb.co/st5tVRJ/Group.png"
+  }, 
+  {"id": 13,
     "vehicle_id": 1,
     "vehicle_name": "BIKE",
     "person": 1,
     "price": 35,
     "image": "https://i.ibb.co/RCvqFdB/Frame.png"
   }, {
-    "id": 13,
-    "vehicle_id": 4,
-    "vehicle_name": "TRAIN",
-    "person": 6,
-    "price": 100,
-    "image": "https://i.ibb.co/st5tVRJ/Group.png"
-  }, {
     "id": 14,
-    "vehicle_id": 4,
-    "vehicle_name": "TRAIN",
-    "person": 6,
+    "vehicle_id": 2,
+    "vehicle_name": "CAR",
+    "person": 4,
     "price": 100,
-    "image": "https://i.ibb.co/st5tVRJ/Group.png"
+    "image": "https://i.ibb.co/RzwSCWq/Frame-2.png"
   }, {
     "id": 15,
-    "vehicle_id": 4,
-    "vehicle_name": "TRAIN",
-    "person": 6,
-    "price": 100,
-    "image": "https://i.ibb.co/st5tVRJ/Group.png"
-  }, {
-    "id": 16,
     "vehicle_id": 3,
     "vehicle_name": "BUS",
     "person": 5,
     "price": 69,
     "image": "https://i.ibb.co/zsyFTwf/Frame-1.png"
+  }, {
+    "id": 16,
+    "vehicle_id": 4,
+    "vehicle_name": "TRAIN",
+    "person": 6,
+    "price": 100,
+    "image": "https://i.ibb.co/st5tVRJ/Group.png"
   }]
