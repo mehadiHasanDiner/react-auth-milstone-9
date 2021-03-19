@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=DM+Serif+Text:ital@1&family=Rajdhani:wght@500&family=Signika:wght@400;500;600&family=Teko:wght@400;500;600&display=swap');
+
+body{
+    font-family: 'Signika', sans-serif;
+    font-size: large;
+    background-image: url('https://img.freepik.com/free-vector/modern-metropolis-with-cars_95169-6.jpg?size=626&ext=jpg');
+    background-size: cover;    
+    /* background-repeat: no-repeat; */
+}
+
