@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import './Header.css'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -13,14 +14,11 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
                         </Nav>
-                        <Nav>
-                        <Nav.Link href="/home">Home</Nav.Link>
-                        <Nav.Link href="#1">Destination</Nav.Link>
-                        <Nav.Link href="#2">Blog</Nav.Link>
-                        <Nav.Link href="#3">Contact</Nav.Link>
-                        <Nav.Link eventKey={2} href="/login">
-                            Login
-                        </Nav.Link>
+                        <Nav>                      
+                        <Link className ="pl-3" to ="/home">Home</Link>
+                        <Link className ="pl-3" to ="/destination">Destination</Link>
+                        <Link className ="pl-3" to ="/login">Login</Link>
+                        
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

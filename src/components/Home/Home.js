@@ -10,14 +10,13 @@ const Home = () => {
     const [vehicles, setVehicles] = useState(first4);
       useEffect(() =>{
           setVehicles(first4);
-          console.log(first4);
+          console.log(vehicleData);
       }, [first4])
       
     return (
         <div>
-          {vehicles.length}
           {
-          vehicles.map(vehiclesName =><VehicleCard vehicle ={vehiclesName}></VehicleCard>)
+          vehicles.map(vehiclesName =><VehicleCard vehicle ={vehiclesName} key = {vehiclesName.id}></VehicleCard>)
         }
         </div>
     );
