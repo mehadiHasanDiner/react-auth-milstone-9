@@ -9,6 +9,7 @@ import {
 import Login from './components/Login/Login';
 import Home from './components/Home/Home';
 import Destination from './components/Destination/Destination';
+import SignUp from './components/SignUp/SignUp';
 
 function App() {
     
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/login">
           <Login></Login>       
+          </Route>
+          <Route path="/signup">
+            <SignUp></SignUp>
           </Route>
         <Route exact path="/">
             <Home></Home>
