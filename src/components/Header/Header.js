@@ -14,14 +14,17 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
                         </Nav>
-                        <Nav>                      
-                        <Link className ="pl-3" to ="/home">Home</Link>
-                        <Link className ="pl-3" to ="/destination">Destination</Link>
-                        <Link className ="pl-3" to ="/login">Login</Link>
-                        
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+                        <Nav>
+                            <Link className="pl-3" to="/home">Home</Link>
+                            <Link className="pl-3" to="/destination">Destination</Link>
+                            <Link className="pl-3" to="/login">Login</Link>
+                            {/* <p>{
+                                user.isSignedIn && <h1 style={{ textAlign: 'center' }}>Welcome, {user.name}</h1>
+                            }</p> */}
+
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
             </Container>
         </div>
     );
