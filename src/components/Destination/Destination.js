@@ -6,7 +6,6 @@ import {
   faMapMarkerAlt,
   faMapMarkedAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import Map from "../../img/map-img/Map.png";
 import Bike from "../../vehicles/bikedata.json";
 import Car from "../../vehicles/cardata.json";
 import Bus from "../../vehicles/busdata.json";
@@ -40,7 +39,7 @@ const Destination = () => {
     }
 
     setVehicles(data);
-  }, []);
+  }, [vehicleData]);
 
   const [handleBtn, setHandleBtn] = useState(false);
   const handleLocationSearchButton = (Event) => {
