@@ -1,33 +1,43 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import { UserContext } from "../../App";
+import "./Header.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import './Header.css'
-import { Link } from 'react-router-dom';
+// import { Button } from "bootstrap";
 
 const Header = () => {
-    return (
-        <div>
-            <Container>
-                <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-                    <Navbar.Brand>Jattri-Pathao</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="mr-auto">
-                        </Nav>
-                        <Nav>
-                            <Link className="pl-3" to="/home">Home</Link>
-                            <Link className="pl-3" to="/destination">Destination</Link>
-                            <Link className="pl-3" to="/login">Login</Link>
-                            {/* <p>{
-                                user.isSignedIn && <h1 style={{ textAlign: 'center' }}>Welcome, {user.name}</h1>
-                            }</p> */}
+  const [loggedInUser] = useContext(UserContext);
+  return (
+    <div>
+      <Container>
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+          <Navbar.Brand>Jattri-Pathao</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+            </Nav>
+            <Nav>
+              <Link className="m-2" to="/home">Home</Link> {" "}
+              <Link className="m-2" to="/destination/bike"> Destination </Link>{" "}
 
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
-            </Container>
-        </div>
-    );
+              <Link to="/login">
+              {" "}
+              {loggedInUser.email ? (
+                <p>
+                  {" "}
+                  {loggedInUser.email.slice(0, 8)}{" "}
+                </p>
+              ) : (
+                <Button  className="m-2" Button variant="primary" type="submit"> Login </Button>
+              )}{" "}
+            </Link>{" "}
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </Container>
+    </div>
+  );
 };
 
 export default Header;
