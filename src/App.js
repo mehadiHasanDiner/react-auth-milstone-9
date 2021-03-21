@@ -8,9 +8,9 @@ import {
 } from "react-router-dom";
 import Login from './components/Login/Login';
 import Home from './components/Home/Home';
-import Destination from './components/Destination/Destination';
-import GoogleMap from './components/Map/GoogleMap';
 import VehicleSearch from './components/VehicleSearch/VehicleSearch';
+import Map from './components/Map/Map';
+import Destination from './components/Destination/Destination';
 
 function App() {
     
@@ -23,13 +23,13 @@ function App() {
           <Home></Home>       
           </Route>
           <Route path="/destination">
-          <Destination></Destination>       
+          <Destination></Destination>     
           </Route>
           <Route path="/login">
           <Login></Login>       
           </Route>
           <Route path="/map">
-            <GoogleMap></GoogleMap>
+            <Map></Map>
           </Route>
           <Route path ="/vehicle/:vehicleName">
             <VehicleSearch></VehicleSearch>
