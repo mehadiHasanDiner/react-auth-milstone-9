@@ -29,7 +29,7 @@ const Header = () => {
                   {loggedInUser.email.slice(0, 8)}{" "}
                 </p>
               ) : (
-                <Button  className="m-2" Button variant="primary" type="submit"> Login </Button>
+                <Button  className="m-2" type="submit"> Login </Button>
               )}{" "}
             </Link>{" "}
             </Nav>

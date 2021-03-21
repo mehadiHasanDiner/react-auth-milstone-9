@@ -93,9 +93,9 @@ const Destination = () => {
 
             {/*  */}
             <div className="destination-container">
-        <div className="search-destination">
+            <div className="search-destination">
           
-          <div style={{ display: searchResult }} className="result-destination">
+           <div style={{ display: searchResult }} className="result-destination">
             <h3>
               <FontAwesomeIcon icon={faMapMarkerAlt} /> From:{" "}
               <strong> {fromLocation} </strong>{" "}
@@ -105,8 +105,8 @@ const Destination = () => {
               <strong> {toLocation} </strong>{" "}
             </h3>{" "}
             <input className="data" type="date" />
-          </div>{" "}
-          <div className="vehicle-component" style={{ display: searchResult }}>
+            </div>{" "}
+           <div className="vehicle-component" style={{ display: searchResult }}>
             {" "}
             {vehicles &&
               vehicles.map((vehicle) => (

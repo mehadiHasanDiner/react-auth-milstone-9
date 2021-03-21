@@ -1,5 +1,5 @@
 .RegisterForm {
-    background: white;
+    background: #72ceff;
     width: 460px;
     margin: 30px auto;
     padding: 10px 70px;
@@ -9,7 +9,7 @@
 }
 
 .loginForm {
-    background: white;
+    background: #72ceff;
     width: 460px;
     height: 600px;
     display: flex;
@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
     margin: 50px auto;
-    padding: 10px 0;
+    padding: 10px 70px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
 }
@@ -66,7 +66,7 @@
 
 .RegisterForm input[type="submit"],
 .loginForm input[type="submit"] {
-    background: red;
+    background: rgb(21, 124, 0);
     width: 300px;
     height: 44px;
     font-size: 17px;
@@ -80,7 +80,7 @@
 
 .RegisterForm input[type="submit"]:hover,
 .loginForm input[type="submit"]:hover {
-    background: rgba(255, 0, 0, 0.657);
+    background: rgba(8, 92, 250, 0.657);
 }
 
 .RegisterForm p,
