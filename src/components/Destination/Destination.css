@@ -1,6 +1,6 @@
 .destination-container {
     display: grid;
-    margin: 60px auto;
+    margin: 20px auto;
     max-width: 100%;
 }
 
@@ -42,7 +42,7 @@
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
     transition: all .3s ease;
 }
@@ -53,7 +53,7 @@
 
 .vehicle-component {
     overflow: scroll;
-    height: 370px;
+    height: auto;
 }
 
 .result-destination {
@@ -68,31 +68,11 @@
     text-transform: uppercase;
     font-size: 20px;
     text-align: left;
-    margin-left: 30px;
+    margin-left: 10px;
     font-weight: 400;
     color: rgb(56, 53, 53);
 }
 
 .date [type="date"] {
     padding: 10px;
-}
-
-.map-destination {
-    height: 600px;
-}
-
-@media only screen and (max-width: 600px) {
-    .destination-container {
-        display: block;
-        width: 100%;
-    }
-    .search-destination {
-        width: 300px;
-        margin: 0 auto;
-    }
-    .map-destination {
-        width: 300px;
-        overflow: hidden;
-        display: none;
-    }
 }

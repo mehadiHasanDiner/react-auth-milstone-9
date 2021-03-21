@@ -68,7 +68,7 @@ const Destination = () => {
     <div>
       <Container>
         <div class="row">
-          <div class="col-6">
+          <div class="col-sm-6">
             <form className="mt-4 p-4 from" style={{ backgroundColor: 'skyBlue' }}>
 
             <Form.Group>
@@ -121,7 +121,7 @@ const Destination = () => {
       
           </div>
 
-          <div class="col-6 mt-4">
+          <div class="col-sm-6 mt-4">
           <GoogleMap></GoogleMap>
           </div>
         </div>
