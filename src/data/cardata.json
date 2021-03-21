@@ -1,0 +1,6 @@
+[{ "vehicleImg": "https://i.ibb.co/RzwSCWq/Frame-2.png", "name": "Car", "totalPassenger": 2, "fare": "$34.21" },
+    { "vehicleImg": "https://i.ibb.co/RzwSCWq/Frame-2.png", "name": "Car", "totalPassenger": 6, "fare": "$39.51" },
+    { "vehicleImg": "https://i.ibb.co/RzwSCWq/Frame-2.png", "name": "Car", "totalPassenger": 4, "fare": "$37.46" },
+    { "vehicleImg": "https://i.ibb.co/RzwSCWq/Frame-2.png", "name": "Car", "totalPassenger": 4, "fare": "$33.70" }
+
+]

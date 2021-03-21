@@ -9,7 +9,7 @@ const Header = () => {
         <div>
             <Container>
                 <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-                    <Navbar.Brand href="/home">Jattri-Pathao</Navbar.Brand>
+                    <Navbar.Brand>Jattri-Pathao</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">

@@ -6,10 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Form, Button } from "react-bootstrap";
 
 
-
-
-
 const VehicleSearch = () => {
+
     const { vehicleName } = useParams();
     const vehiclesType = vehicleData.find(vehicle => vehicle.vehicle_name === vehicleName)
     console.log(vehiclesType);

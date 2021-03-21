@@ -1,0 +1,6 @@
+[{ "vehicleImg": "https://i.ibb.co/RCvqFdB/Frame.png", "name": "Bike", "totalPassenger": 1, "fare": "$14.65" },
+    { "vehicleImg": "https://i.ibb.co/RCvqFdB/Frame.png", "name": "Bike", "totalPassenger": 2, "fare": "$19.40" },
+    { "vehicleImg": "https://i.ibb.co/RCvqFdB/Frame.png", "name": "Bike", "totalPassenger": 2, "fare": "$15.20" },
+    { "vehicleImg": "https://i.ibb.co/RCvqFdB/Frame.png", "name": "Bike", "totalPassenger": 1, "fare": "$13.70" }
+
+]
