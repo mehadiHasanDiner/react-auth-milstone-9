@@ -8,11 +8,13 @@ import firebaseConfig from "./firebase.config";
 import firebase from "firebase/app";
 import "firebase/auth";
 import { UserContext } from "../../App";
+// import '../Login/firebase.config'
 import { useHistory, useLocation } from "react-router";
 
-if (firebase.apps.length < 1) {
+if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
 }
+
 const Login = () => {
   const [logedInUser, setLoggedInUser] = useContext(UserContext);
   const [registerForm, setRegisterForm] = useState(false);
@@ -110,8 +112,8 @@ const Login = () => {
       .auth()
       .signInWithPopup(googleProvider)
       .then((result) => {
-        var credential = result.credential;
-        var token = credential.accessToken;
+        // var credential = result.credential;
+        // var token = credential.accessToken;
         var user = result.user;
         setLoggedInUser({ email: user.email });
         history.replace(from);
@@ -134,10 +136,10 @@ const Login = () => {
       .auth()
       .signInWithPopup(fbProvider)
       .then((result) => {
-        var credential = result.credential;
+        // var credential = result.credential;
         var user = result.user;
         setLoggedInUser({ email: user.email });
-        var accessToken = credential.accessToken;
+        // var accessToken = credential.accessToken;
         history.replace(from);
       })
       .catch((error) => {
@@ -183,8 +185,10 @@ const Login = () => {
             {registerUser.icon} {registerUser.wrong}{" "}
           </p>{" "}
           <div className="socialIcon">
-            <img onClick={handleGoogleRegister} src={Google} alt="" />
-            <img onClick={handleFbRegister} src={Facebook} alt="" />
+          <span style ={{backgroundColor: 'white', padding: '10px'}}>  <img onClick={handleGoogleRegister} src={Google} alt="" /> 
+            Sign in with Goooogle</span> <br/>
+
+            <span style ={{backgroundColor: 'white', padding: '10px'}}><img onClick={handleFbRegister} src={Facebook} alt="" />Sign in with Facebook</span>
           </div>{" "}
         </form>{" "}
       </div>{" "}
@@ -209,8 +213,10 @@ const Login = () => {
             </a>{" "}
           </p>{" "}
           <div className="socialIcon">
-            <img onClick={handleGoogleRegister} src={Google} alt="" />
-            <img onClick={handleFbRegister} src={Facebook} alt="" />
+          <span style ={{backgroundColor: 'white', padding: '10px'}}>  <img onClick={handleGoogleRegister} src={Google} alt="" /> 
+            Sign in with Goooogle</span> <br/>
+
+            <span style ={{backgroundColor: 'white', padding: '10px'}}><img onClick={handleFbRegister} src={Facebook} alt="" />Sign in with Facebook</span>
           </div>{" "}
         </form>{" "}
       </div>{" "}

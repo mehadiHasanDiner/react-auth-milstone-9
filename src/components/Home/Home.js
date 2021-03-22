@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import Bike from "../../img/Transportation-img/bike.jpg";
@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
   const [vehicleData, setVehicleData] = useContext(selectedVehicle);
+  console.log(vehicleData);
   const bike = () => {
     document.getElementById("bike");
     setVehicleData("bike");

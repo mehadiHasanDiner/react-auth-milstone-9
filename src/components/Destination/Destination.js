@@ -46,13 +46,13 @@ const Destination = () => {
     Event.preventDefault();
     setHandleBtn(true);
   };
-  let searchForm;
-  if (handleBtn === true) {
-    searchForm = "none";
-  }
-  if (handleBtn === false) {
-    searchForm = "block";
-  }
+  // let searchForm;
+  // if (handleBtn === true) {
+  //   searchForm = "none";
+  // }
+  // if (handleBtn === false) {
+  //   searchForm = "block";
+  // }
 
   let searchResult;
   if (handleBtn === true) {
@@ -63,7 +63,7 @@ const Destination = () => {
   }
   const [fromLocation, setFromLocation] = useState("");
   const [toLocation, setToLocation] = useState("");
-  var mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
+  // var mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
   return (
     <div>
       <Container>
