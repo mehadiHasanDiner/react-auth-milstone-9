@@ -26,7 +26,7 @@ const Header = () => {
               {loggedInUser.email ? (
                 <p>
                   {" "}
-                  {loggedInUser.email.slice(0, 8)}{" "}
+                  {loggedInUser.email.slice(0, 6)}{" "}
                 </p>
               ) : (
                 <Button  className="m-2" type="submit"> Login </Button>

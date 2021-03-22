@@ -10,6 +10,7 @@ import "firebase/auth";
 import { UserContext } from "../../App";
 // import '../Login/firebase.config'
 import { useHistory, useLocation } from "react-router";
+import { Button } from "react-bootstrap";
 
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
@@ -174,16 +175,18 @@ const Login = () => {
             onClick={registerUserWithEmailAndPass}
             value="Create an Accout"
           />
-          <p>
+
+          <div style ={{marginTop: '10px'}}>
             Already have an account ?{" "}
-            <a href="#" onClick={goToLogIN}>
+            <Button style ={{cursor : 'pointer'}} onClick={goToLogIN}>
               Login Now{" "}
-            </a>{" "}
-          </p>{" "}
-          <p className="wrong-pass">
+            </Button>{" "}
+            <p style ={{textAlign:'center'}}>Or,</p>
+          </div>{" "}
+          <div className="wrong-pass">
             {" "}
             {registerUser.icon} {registerUser.wrong}{" "}
-          </p>{" "}
+          </div>{" "}
           <div className="socialIcon">
           <span style ={{backgroundColor: 'white', padding: '10px'}}>  <img onClick={handleGoogleRegister} src={Google} alt="" /> 
             Sign in with Goooogle</span> <br/>
@@ -206,12 +209,13 @@ const Login = () => {
             onClick={handleLogin}
             value="Login to Your Account"
           />
-          <p>
+          <div style ={{marginTop:'10px'}}>
             Don 't you have an account?{" "}
-            <a href="#" onClick={goToRegister}>
+            <Button style ={{cursor : 'pointer'}} onClick={goToRegister}>
               Create one{" "}
-            </a>{" "}
-          </p>{" "}
+              </Button>{" "}
+            <div style ={{textAlign:'center'}}>Or,</div>
+          </div>{" "}
           <div className="socialIcon">
           <span style ={{backgroundColor: 'white', padding: '10px'}}>  <img onClick={handleGoogleRegister} src={Google} alt="" /> 
             Sign in with Goooogle</span> <br/>
