@@ -18,8 +18,8 @@ export class MapContainer extends Component {
             style = { mapStyles }
             initialCenter = {
                 {
-                    lat: -1.2884,
-                    lng: 36.8233,
+                    lat: 23.733348,
+                    lng: 90.406707,
                 }
             }
             />
